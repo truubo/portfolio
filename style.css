@@ -1,4 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-    margin: 0;
-    background-color: #000;
+  margin: 0;
+  height: 100vh;
+  background: url('/img/dithering.png'), linear-gradient(180deg, rgba(16,59,25,1) 0%, rgba(26,6,50,1) 74%, rgba(6,42,97,1) 100%);
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.infobox {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  max-height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  outline: solid 4px #b59ae7;
+}
+
+.stars {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  border-radius: 50%;
+  height: 4px;
+  background-color: #fff;
+}
+
+.star-container {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+}
+
+/*
+@for $i from 1 to 21
+  .star-container:nth-child(#{$i})
+    transform: translateX(random(100)vw)
+  .star-container:nth-child(#{$i}) .star
+    animation: anim random(8)s linear infinite;
+*/
+
+.star-container:nth-child(1) {
+  transform: translateX(10vw);
+}
+
+.star-container:nth-child(1) .star {
+  animation: anim 6s linear infinite;
+}
+
+.star-container:nth-child(2) {
+  transform: translateX(68vw);
+}
+
+.star-container:nth-child(2) .star {
+  animation: anim 5s linear infinite;
+}
+
+.star-container:nth-child(3) {
+  transform: translateX(81vw);
+}
+
+.star-container:nth-child(3) .star {
+  animation: anim 6s linear infinite;
+}
+
+.star-container:nth-child(4) {
+  transform: translateX(50vw);
+}
+
+.star-container:nth-child(4) .star {
+  animation: anim 3s linear infinite;
+}
+
+.star-container:nth-child(5) {
+  transform: translateX(96vw);
+}
+
+.star-container:nth-child(5) .star {
+  animation: anim 8s linear infinite;
+}
+
+.star-container:nth-child(6) {
+  transform: translateX(27vw);
+}
+
+.star-container:nth-child(6) .star {
+  animation: anim 5s linear infinite;
+}
+
+.star-container:nth-child(7) {
+  transform: translateX(31vw);
+}
+
+.star-container:nth-child(7) .star {
+  animation: anim 2s linear infinite;
+}
+
+.star-container:nth-child(8) {
+  transform: translateX(9vw);
+}
+
+.star-container:nth-child(8) .star {
+  animation: anim 2s linear infinite;
+}
+
+.star-container:nth-child(9) {
+  transform: translateX(3vw);
+}
+
+.star-container:nth-child(9) .star {
+  animation: anim 7s linear infinite;
+}
+
+.star-container:nth-child(10) {
+  transform: translateX(92vw);
+}
+
+.star-container:nth-child(10) .star {
+  animation: anim 7s linear infinite;
+}
+
+.star-container:nth-child(11) {
+  transform: translateX(88vw);
+}
+
+.star-container:nth-child(11) .star {
+  animation: anim 7s linear infinite;
+}
+
+.star-container:nth-child(12) {
+  transform: translateX(35vw);
+}
+
+.star-container:nth-child(12) .star {
+  animation: anim 8s linear infinite;
+}
+
+.star-container:nth-child(13) {
+  transform: translateX(51vw);
+}
+
+.star-container:nth-child(13) .star {
+  animation: anim 4s linear infinite;
+}
+
+.star-container:nth-child(14) {
+  transform: translateX(1vw);
+}
+
+.star-container:nth-child(14) .star {
+  animation: anim 8s linear infinite;
+}
+
+.star-container:nth-child(15) {
+  transform: translateX(45vw);
+}
+
+.star-container:nth-child(15) .star {
+  animation: anim 6s linear infinite;
+}
+
+.star-container:nth-child(16) {
+  transform: translateX(91vw);
+}
+
+.star-container:nth-child(16) .star {
+  animation: anim 5s linear infinite;
+}
+
+.star-container:nth-child(17) {
+  transform: translateX(23vw);
+}
+
+.star-container:nth-child(17) .star {
+  animation: anim 2s linear infinite;
+}
+
+.star-container:nth-child(18) {
+  transform: translateX(20vw);
+}
+
+.star-container:nth-child(18) .star {
+  animation: anim 3s linear infinite;
+}
+
+.star-container:nth-child(19) {
+  transform: translateX(95vw);
+}
+
+.star-container:nth-child(19) .star {
+  animation: anim 2s linear infinite;
+}
+
+.star-container:nth-child(20) {
+  transform: translateX(72vw);
+}
+
+.star-container:nth-child(20) .star {
+  animation: anim 4s linear infinite;
+}
+
+
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-30vh);
+  }
 }
