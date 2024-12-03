@@ -43,9 +43,65 @@ nav .active {
   justify-content: center;
 }
 
-.home * {
+.title img {
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.right {
+  width: 50%;
+}
+
+.animated-page * {
   opacity: 0;
   animation: fly-in 1s ease-out forwards;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.project {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.comment-archive {
+  background: url(img/dithering.png), #1E1E2F;
+  color: #C5C6E7;
+}
+
+.projects-grid a {
+  text-decoration: none;
+}
+
+.omfgpop {
+  background: url(img/omfgpop-background.jpg);
+  background-size: cover;
+}
+
+.omfgpop img {
+  width: 100%;
+}
+
+.night-vision {
+  background: #000;
+  color: #f00;
+}
+
+.night-vision img {
+  width: 100%;
 }
 
 /* call me weird, but I like to write as much as I can 
@@ -53,87 +109,87 @@ nav .active {
 
 /* Sass:
 @for $i from 1 to 21
-    .home *:nth-child(#{$i})
+    .animated-page *:nth-child(#{$i})
         animation-delay: #{($i - 1) * 100}ms
 */
 
-.home *:nth-child(1) {
+.animated-page *:nth-child(1) {
 	animation-delay: 0ms;
 }
 
-.home *:nth-child(2) {
+.animated-page *:nth-child(2) {
 	animation-delay: 200ms;
 }
 
-.home *:nth-child(3) {
+.animated-page *:nth-child(3) {
 	animation-delay: 400ms;
 }
 
-.home *:nth-child(4) {
+.animated-page *:nth-child(4) {
 	animation-delay: 600ms;
 }
 
-.home *:nth-child(5) {
+.animated-page *:nth-child(5) {
 	animation-delay: 800ms;
 }
 
-.home *:nth-child(6) {
+.animated-page *:nth-child(6) {
 	animation-delay: 1000ms;
 }
 
-.home *:nth-child(7) {
+.animated-page *:nth-child(7) {
 	animation-delay: 1200ms;
 }
 
-.home *:nth-child(8) {
+.animated-page *:nth-child(8) {
 	animation-delay: 1400ms;
 }
 
-.home *:nth-child(9) {
+.animated-page *:nth-child(9) {
 	animation-delay: 1600ms;
 }
 
-.home *:nth-child(10) {
+.animated-page *:nth-child(10) {
 	animation-delay: 1800ms;
 }
 
-.home *:nth-child(11) {
+.animated-page *:nth-child(11) {
 	animation-delay: 2000ms;
 }
 
-.home *:nth-child(12) {
+.animated-page *:nth-child(12) {
 	animation-delay: 2200ms;
 }
 
-.home *:nth-child(13) {
+.animated-page *:nth-child(13) {
 	animation-delay: 2400ms;
 }
 
-.home *:nth-child(14) {
+.animated-page *:nth-child(14) {
 	animation-delay: 2600ms;
 }
 
-.home *:nth-child(15) {
+.animated-page *:nth-child(15) {
 	animation-delay: 2800ms;
 }
 
-.home *:nth-child(16) {
+.animated-page *:nth-child(16) {
 	animation-delay: 3000ms;
 }
 
-.home *:nth-child(17) {
+.animated-page *:nth-child(17) {
 	animation-delay: 3200ms;
 }
 
-.home *:nth-child(18) {
+.animated-page *:nth-child(18) {
 	animation-delay: 3400ms;
 }
 
-.home *:nth-child(19) {
+.animated-page *:nth-child(19) {
 	animation-delay: 3600ms;
 }
 
-.home *:nth-child(20) {
+.animated-page *:nth-child(20) {
 	animation-delay: 3800ms;
 }
 
@@ -346,4 +402,15 @@ nav .active {
     opacity: 0;
     transform: translateY(-30vh);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    width: 80%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
 }
