@@ -5,6 +5,8 @@ body {
   height: 100vh;
   background: url(img/bg.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Nunito', Arial, sans-serif;
 }
 
@@ -20,6 +22,7 @@ body {
 nav {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
 nav a {
@@ -29,6 +32,15 @@ nav a {
 
 nav .active {
   color: #f88;
+}
+
+article.has-image {
+  display: flex;
+  gap: 5px;
+}
+
+article.has-image .image video {
+  width: 200px;
 }
 
 .info {

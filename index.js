@@ -4,7 +4,8 @@ const greetings = [
     "Kamusta, ako si ", // tagalog
     "Hola, soy ", // spanish
     "Hallo, ich bin ", // german
-    "Olá, meu nome é " // portuguese
+    "Olá, meu nome é ", // portuguese
+    "Ciao, sono " // italian
 ]
 
 document.querySelector(".animated-page").querySelector("#greeting").innerHTML = greetings[
